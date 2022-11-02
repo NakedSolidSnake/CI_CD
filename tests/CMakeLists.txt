@@ -12,5 +12,5 @@ target_include_directories(test_sum
 add_test(
   NAME test_sum
   COMMAND $<TARGET_FILE:test_sum>
-  WORKING_DIRECTORY ${CMAKE_BINARY_DIR}/
+  WORKING_DIRECTORY ${CMAKE_BINARY_DIR}/bin
   )

@@ -33,7 +33,7 @@ jobs:
       uses: actions/upload-artifact@v3.1.0
       with:
     # Artifact name
-        name: programa
+        name: application
     # A file, directory or wildcard pattern that describes what to upload
         path: /home/runner/work/CI_CD/CI_CD/build/bin/cicd
       

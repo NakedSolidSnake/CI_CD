@@ -29,3 +29,8 @@ jobs:
       # Build your program with the given configuration
       run: cmake --build ${{github.workspace}}/build --config ${{env.BUILD_TYPE}} 
       
+    - name: Docker Build
+      run: docker build -t cicd .
+      
+    - name: Docker run
+      run: docker container run --rm cicd

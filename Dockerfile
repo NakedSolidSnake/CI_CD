@@ -4,4 +4,4 @@ WORKDIR /app
 
 COPY /build/bin/* /app/
 
-CMD ./cidi
+CMD ./cicd

@@ -1,7 +1,8 @@
 #include <stdio.h>
+#include <sum.h>
 
 int main (int argc, char *argv[])
 {
-    printf ("Hello CI/CD\n");
+    printf ("Sum 10 + 10 = %d\n", sum (10, 10));
     return 0;
 }

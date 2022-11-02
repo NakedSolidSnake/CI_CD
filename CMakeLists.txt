@@ -12,7 +12,14 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_BUILD_TYPE Debug)
 
-add_executable(cicd "")        
+add_subdirectory(src/lib)
+
+add_executable(cicd "")
+target_link_libraries(cicd my_math)
+target_include_directories(cicd 
+    PUBLIC
+    ${CMAKE_CURRENT_LIST_DIR}/src/lib
+    )
 target_sources(cicd 
    PUBLIC 
    ${CMAKE_CURRENT_LIST_DIR}/src/main.c 

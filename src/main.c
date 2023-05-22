@@ -3,6 +3,6 @@
 
 int main (int argc, char *argv[])
 {
-    printf ("Sum 10 + 10 = %d\n", sum (10, 10));
+    printf ("Sum 11 + 10 = %d\n", sum (11, 10));
     return 0;
 }
